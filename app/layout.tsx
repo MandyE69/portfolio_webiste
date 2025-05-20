@@ -1,14 +1,17 @@
 import type React from "react"
 import "@/app/globals.css"
-import { Inter, Kaushan_Script } from 'next/font/google'
+import { Inter, Style_Script} from 'next/font/google'
 import { ThemeProvider } from "@/components/theme-provider"
 import { Metadata } from "next"
 
-const inter = Inter({ subsets: ["latin"] })
-const kaushanScript = Kaushan_Script({
+const inter = Inter({ 
+  subsets: ["latin"],
+  variable: "--font-inter"
+})
+const styleScript = Style_Script({
   weight: "400",
   subsets: ["latin"],
-  variable: "--font-kaushan",
+  variable: "--font-style",
 })
 
 export const metadata: Metadata = {
@@ -32,7 +35,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} ${kaushanScript.variable}`}>
+      <body className={`${inter.className} ${styleScript.variable}`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>
