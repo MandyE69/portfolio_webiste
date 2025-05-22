@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import type React from "react"
 import "@/app/globals.css"
 import { Inter, Style_Script} from 'next/font/google'
@@ -37,6 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} ${styleScript.variable}`}>
+        <SpeedInsights/>
         <Analytics/>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}
