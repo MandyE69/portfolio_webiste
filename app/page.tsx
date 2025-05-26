@@ -82,7 +82,7 @@ export default function Home() {
                 <div className="absolute inset-[3px] rounded-full bg-background"></div>
                 <div className="absolute inset-[7px] rounded-full overflow-hidden">
                   <img
-                    src="/madhav.jpg?height=320&width=320"
+                    src="/pro1.jpg?height=320&width=320"
                     alt="Madhav Gyawali"
                     className="w-full h-full object-cover"
                   />
