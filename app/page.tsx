@@ -26,8 +26,8 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="sticky top-0 z-40 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
-          <div className="text-xl font-script]">Madhav Gyawali</div>
+        <div className="container flex p-6 h-20 items-center justify-between">
+          <div className="text-5xl font-bold font-script">M G...</div>
           <nav className="hidden md:flex gap-6">
             <Link
               href="#about"
